@@ -110,7 +110,7 @@
         scrollbar-width: none;  /* Firefox */
         width: auto; /* Adjust width for smaller screens */
         height: 450px; /* Allow the height to adjust based on content */
-        top: 40px; /* Example adjustment for top positioning */
+        top: 80px; /* Example adjustment for top positioning */
         left: 50%; /* Center horizontally */
         transform: translateX(-50%); /* Centering trick */
     }    
