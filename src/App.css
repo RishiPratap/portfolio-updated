@@ -108,7 +108,7 @@
         scroll-behavior: smooth;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-        width: auto; /* Adjust width for smaller screens */
+        width: 90%; /* Adjust width for smaller screens */
         height: 450px; /* Allow the height to adjust based on content */
         top: 270px; /* Example adjustment for top positioning */
         left: 50%; /* Center horizontally */
