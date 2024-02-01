@@ -1,0 +1,231 @@
+.App{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right:15px;
+    transition: all 200ms ease-out;
+}
+
+.icon:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.bottom_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+    border-radius: 0px; 
+    backdrop-filter: blur(14px); 
+    background-color: rgba(41, 40, 40, 0.2); 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+}
+.container_item1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease-out;
+    padding: 5px;
+    width: 50px;
+}
+.container_item1:hover{
+    cursor: pointer;
+    border-radius: 5px; 
+    backdrop-filter: blur(14px); 
+    background-color: rgba(88, 88, 88, 0.128); 
+}
+
+.container_item2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_item3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.container_item3:hover{
+    cursor: pointer;
+    border-radius: 5px; 
+    backdrop-filter: blur(14px); 
+    background-color: rgba(88, 88, 88, 0.128); 
+}
+
+.mainmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    height: 70vh;
+    width: 50%;
+    position: absolute;
+    left: 50%; /* Updated to center horizontally */
+    top: 300px; /* Updated to center vertically */
+    transform: translate(-50%, -50%); /* Centering trick */
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(88, 88, 88, 0.128);
+    animation: slide-in 1s backwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate(-50%, -150%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .mainmenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: auto;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        width: auto; /* Adjust width for smaller screens */
+        top: 100px; /* Example adjustment for top positioning */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Centering trick */
+    }    
+    .mainmenu::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
+    }
+    .mainmenu-status{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        padding: 10px;
+        gap: 10px 10px;
+        width: 100% auto; /* Adjust width for smaller screens */
+        height: 100vh auto; /* Allow the height to adjust based on content */
+        top: 10px; /* Example adjustment for top positioning */
+        right: 0; /* Center horizontally */
+        transform: translate(-5%, 15%); /* Centering trick */
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(88, 88, 88, 0.128);
+    }
+}
+
+.menu_items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 20px;
+    padding: 10px;
+}
+
+.mainmenu-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    z-index: 1;
+    height: auto;
+    width: 100% auto;
+    position: absolute;
+    right: 1%; /* Updated to center horizontally */
+    top: 30px; /* Updated to center vertically */
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(88, 88, 88, 0.128);
+}
+.menu_items-status{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+/* WindowDesktop.css */
+
+/* Styles for the entire window desktop */
+  
+  /* Styles for individual window */
+
+  
+  /* Title bar styles */
+  .title-bar {
+    background-color: #eee;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Window title styles */
+  .title {
+    font-weight: bold;
+  }
+  
+  /* Window content styles */
+  
+  /* Window buttons styles */
+  .window-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  /* Minimize button styles */
+  .window-buttons button:nth-child(1) {
+    color: #2196f3; /* Blue color */
+  }
+  
+  /* Maximize button styles */
+  .window-buttons button:nth-child(2) {
+    color: #4caf50; /* Green color */
+  }
+  
+  /* Close button styles */
+  .window-buttons button:nth-child(3) {
+    color: #f44336; /* Red color */
+  }
+/* index.css or any appropriate CSS file */
+.userscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color: rgba(88, 88, 88, 0.128);
+    position: relative;
+    transition: all 200ms ease-out;
+}
+.wink {
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+    color: #fff; /* Change the font color */
+  }
