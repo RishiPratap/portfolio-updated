@@ -4,7 +4,7 @@ import './App.css';
 
 const Vscode = () => {
     const [windows, setWindows] = useState([
-        { id: 2, title: 'Window 2', isMinimized: false, isMaximized: false },
+        { id: 2, title: 'Resume', isMinimized: false, isMaximized: false },
       ]);
     
       const minimizeWindow = (id) => {

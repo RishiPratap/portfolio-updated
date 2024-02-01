@@ -3,7 +3,7 @@ import './App.css';
 
 const WindowDesktop = () => {
   const [windows, setWindows] = useState([
-    { id: 1, title: 'Window 1', isMinimized: false, isMaximized: false },
+    { id: 1, title: 'Chrome', isMinimized: false, isMaximized: false },
   ]);
 
   const minimizeWindow = (id) => {
