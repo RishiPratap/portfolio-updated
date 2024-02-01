@@ -112,7 +112,6 @@
         height: 450px; /* Allow the height to adjust based on content */
         top: 270px; /* Example adjustment for top positioning */
         left: 50%; /* Center horizontally */
-/*         transform: translateX(-50%); /* Centering trick */ */
     }    
     .mainmenu::-webkit-scrollbar {
         display: none;  /* Safari and Chrome */
