@@ -2,9 +2,9 @@ import './App.css';
 import PropTypes from 'prop-types';
 
 const Mymenu = ({checkMenu}) => {
-  const menuItems = ['https://cdn3d.iconscout.com/3d/free/thumb/free-diary-3985337-3317715.png?f=webp', 'https://cdn3d.iconscout.com/3d/free/thumb/free-powerpoint-5562344-4642748.png?f=webp', 'https://cdn3d.iconscout.com/3d/free/thumb/free-ios-photos-2978365-2476742.png?f=webp', 'https://cdn3d.iconscout.com/3d/free/thumb/free-video-9060326-7475482.png?f=webp', 'https://cdn3d.iconscout.com/3d/free/thumb/free-pinterest-2950128-2447887.png?f=webp', 'https://cdn3d.iconscout.com/3d/free/thumb/free-google-5148287-4299203.png?f=webp'];
-  const menuText = ['Work Experience', 'Education', 'Projects', 'Skills', 'Interests', 'Awards']
-  const links = ['https://www.github.com','https://www.github.com','https://www.github.com','https://www.github.com','https://www.github.com','https://www.github.com']
+  const menuItems = ['https://cdn.iconscout.com/icon/premium/png-256-thumb/bot-2436168-2067854.png?f=webp', 'https://cdn.iconscout.com/icon/free/png-256/free-prompt-search-8318817-6887564.png?f=webp', 'https://cdn.iconscout.com/icon/free/png-256/free-to-do-list-3524114-2947644.png', 'https://cdn.iconscout.com/icon/premium/png-256-thumb/happy-face-6-765463.png?f=webp', 'https://cdn3d.iconscout.com/3d/premium/thumb/translate-6433282-5526034.png?f=webp', 'https://cdn.iconscout.com/icon/premium/png-256-thumb/cat-2473319-2077293.png?f=webp','https://cdn.iconscout.com/icon/premium/png-256-thumb/yoga-posture-1419570-1199016.png?f=webp'];
+  const menuText = ['AI BOT', 'Promptopia', 'To-Do List', 'Web Design', 'AWS language Trans', 'Fancy','Yoga Posture Correction']
+  const links = ['https://ai-chat-bot-iota.vercel.app/','https://promptopia-snowy-rho.vercel.app/','https://to-do-list-two-sage.vercel.app/','https://face-emotion-detector-pearl.vercel.app/','https://aws-language-translator.vercel.app/','https://builder-io-task.vercel.app/','https://yog-six.vercel.app/']
 
   return (
     <div className='mainmenu'>

@@ -44,7 +44,9 @@ const WindowDesktop = () => {
             </div>
           </div>
           <div className="content">
-           <iframe src="https://www.google.com" title="chrome" frameBorder="0" style={{width:'100%',height:'85vh'}}></iframe>
+          {/* <embed src="https://www.google.com/" width="600" height="400" type="text/html" style={{width:'100%',height:'85vh'}}></embed> */}
+          {/* <object data="https://www.google.com/" width="600" height="400" type="text/html" style={{width:'100%',height:'85vh'}}></object> */}
+           <iframe src="https://google-ui-html.vercel.app/" title="chrome" frameBorder="0" style={{width:'100%',height:'85vh'}}></iframe>
           </div>
         </div>
       ))}

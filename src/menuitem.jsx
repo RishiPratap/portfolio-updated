@@ -46,7 +46,7 @@ const MymenuItem = ({name,url,index}) => {
                   </div>
                 </div>
                 <div className="content">
-             <iframe src={url} title={name} frameBorder="0" style={{width:'100%',height:'85vh'}}></iframe>
+             <iframe src={url} title={name} frameBorder="0" allow="camera;microphone" style={{width:'100%',height:'85vh'}}></iframe>
                 </div>
               </div>
             ))}

@@ -73,7 +73,7 @@
 .mainmenu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 1;
     height: 70vh;
@@ -102,14 +102,15 @@
     .mainmenu {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         overflow: auto;
         scroll-behavior: smooth;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
         width: auto; /* Adjust width for smaller screens */
-        top: 100px; /* Example adjustment for top positioning */
+        height: 450px; /* Allow the height to adjust based on content */
+        top: 40px; /* Example adjustment for top positioning */
         left: 50%; /* Center horizontally */
         transform: translateX(-50%); /* Centering trick */
     }    
